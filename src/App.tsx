@@ -1,5 +1,6 @@
 import './App.css';
-import Header from './components/header';
+import Footer from './components/footer/footer-main';
+import Header from './components/header/desktop-header';
 import HeroSection from './components/hero-section';
 import Stats from './components/stats';
 
@@ -11,6 +12,7 @@ function App() {
         <HeroSection />
       </div>
       <Stats />
+      <Footer />
     </>
   );
 }

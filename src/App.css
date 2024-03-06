@@ -2,13 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  img {
-    @apply inline-block;
-  }
-}
 :root {
   font-family: 'Poppins', sans-serif;
+}
+body,
+html {
+  @apply min-h-screen;
 }
 /* Responsive CSS */
 @media (min-width: 320px) {
@@ -31,4 +30,26 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: hsl(255, 11%, 22%);
+}
+.advance-stat li:nth-child(2) {
+  @apply 2xl:absolute top-[51px] left-1/2 -translate-x-1/2 z-20;
+}
+.advance-stat li:nth-child(3) {
+  @apply 2xl:absolute  top-[102px] right-0;
+}
+.advance-stat li:nth-child(2)::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='hsl(180, 66%, 49%)' d='M32 416c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H32z'/%3E%3C/svg%3E");
+  @apply inline-block w-6 h-6 absolute -left-5 top-20;
+}
+
+.advance-stat li:nth-child(2)::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='hsl(180, 66%, 49%)' d='M32 416c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H32z'/%3E%3C/svg%3E");
+  @apply inline-block w-6 h-6 absolute -right-5 top-20;
+}
+.boost-dsk {
+  background-image: url(/public/images/bg-boost-desktop.svg);
+  background-color: hsl(255, 11%, 22%);
+}
+.main-footer img svg {
+  @apply fill-white;
 }
