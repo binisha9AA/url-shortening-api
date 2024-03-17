@@ -2,7 +2,7 @@ export default function HeroSection() {
   return (
     <section className="flex justify-between mt-12 flex-col-reverse md:flex-row gap-5 items-center">
       <div className="max-w-[unset] md:max-w-[480px] space-y-4">
-        <h2 className="text-primary-dark_violet text-6xl font-bold">
+        <h2 className="text-primary-dark_violet text-3xl md:text-6xl font-bold">
           {' '}
           More than just shorter links
         </h2>

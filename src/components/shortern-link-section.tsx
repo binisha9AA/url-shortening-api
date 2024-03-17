@@ -52,7 +52,8 @@ export default function ShorternLink() {
           >
             <div className="flex justify-between w-full flex-wrap ">
               {' '}
-              <p>{short.original_link}</p> <p>{short.shorten}</p>
+              <p className="break-all">{short.original_link}</p>{' '}
+              <p>{short.shorten}</p>
             </div>
             <div className="flex gap-3 items-center">
               <button className="bg-primary-cyan_btn p-2 text-white rounded-md text-base hover:bg-neutral-very_dark_violet w-full min-w[unset] md:min-w-[100px] ">

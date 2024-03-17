@@ -29,12 +29,12 @@ export default function FooterMain() {
   return (
     <>
       <div className="bg-neutral-very_dark_violet main-footer">
-        <div className="flex gap-52 items-center container py-5">
+        <div className="flex gap-6 md:gap-52 items-center container py-5 flex-col md:flex-row ">
           <figure>
             <LogoIcon fillColor="#fff" />
           </figure>
-          <div className="flex  w-full justify-between items-baseline">
-            <div className="grid grid-cols-3 gap-16 items-center">
+          <div className="flex  w-full justify-between items-baseline flex-col md:flex-row">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-16 items-center w-full">
               {footerNav.map((fnav) => {
                 return (
                   <div className="flex flex-col gap-4  text-white">
@@ -50,7 +50,7 @@ export default function FooterMain() {
                 );
               })}
             </div>
-            <ul className="flex gap-2">
+            <ul className="flex gap-2 w-full items-center justify-center md:justify-between">
               <li>
                 <img src="/public/images/icon-facebook.svg" alt="facebook" />
               </li>
